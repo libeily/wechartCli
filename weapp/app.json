@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "wechartCli",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#dd443a",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#dd443a"
+  }
+
+}

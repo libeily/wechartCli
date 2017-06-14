@@ -1,0 +1,13 @@
+/**app.wxss**/
+.dflex { display: -webkit-box; display: -webkit-flex; display: flex; box-sizing: border-box; }
+.flex1 { -webkit-box-flex:1; -webkit-flex:1; flex: 1; }
+.flex2 { -webkit-box-flex:2; -webkit-flex:2; flex: 2; }
+.alignCenter{ -webkit-box-align: center; -webkit-align-items: center; align-items: center; }
+.alignEnd{ -webkit-box-align: flex-end; -webkit-align-items: flex-end; align-items: flex-end; }
+.packCenter{ -webkit-box-pack: center; -webkit-justify-content: center; justify-content: center; }
+.nowrap{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ov{overflow: hidden}
+
+
+
+

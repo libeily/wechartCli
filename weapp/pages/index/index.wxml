@@ -1,0 +1,4 @@
+<view class="container">
+    <button bindtap="buttonClik">点击测试</button>
+    <view>{{globalData}}</view>
+</view>
