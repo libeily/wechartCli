@@ -3,10 +3,11 @@ var app = getApp();
 var r = require('./require.js');//引入js的方式
 Page({
   data: {
-    globalData:app.globalData.testData
+    globalData:app.globalData.testData,
+    test:'123'
   },
   buttonClik:function () {
-    console.log(r.test());
+    r.test.bind(this)();
     console.log(r.test1());
     console.log(app.commonTest());
     this.setData({
