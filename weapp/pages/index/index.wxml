@@ -1,5 +1,6 @@
 <view class="container">
     <button bindtap="buttonClik">点击测试</button>
+    <button bindtap="cut">点击截图</button>
     <!--<view>{{globalData}}</view>-->
     <!--<view>{{test}}</view>-->
     <canvas canvas-id="myCanvas" class="canvas"></canvas>
