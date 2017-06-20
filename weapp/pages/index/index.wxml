@@ -1,3 +1,4 @@
+<import src="../../utils/lib/html2wxml/html2wxml.wxml/"/>
 <view class="container">
     <button bindtap="buttonClik">点击测试</button>
     <button bindtap="cut">点击截图</button>
@@ -5,4 +6,5 @@
     <!--<view>{{test}}</view>-->
     <canvas canvas-id="myCanvas" class="canvas"></canvas>
     <image src = '{{cutted_url}}' class="img"></image>
+    <template is="html2Wxml" data="{{innerHTML}}"></template>
 </view>

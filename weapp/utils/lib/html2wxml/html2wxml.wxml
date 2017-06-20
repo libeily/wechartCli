@@ -1,0 +1,140 @@
+<!--
+  @params {ElementNodeString} innerWxml
+-->
+
+<template name="html2Wxml">
+    <view class="renderHTML">
+    <block wx:key="index" wx:for="{{innerHTML}}" wx:for-item="root">
+        <view wx:if="{{root.node == 'text'}}" class="{{root.attr.class}}" style="{{root.attr.style}}">{{root.text}}23423</view>
+        <block wx:if="{{root.node == 'element'}}">
+            <block wx:if="{{root.tag == 'img'}}">
+                <image src="{{root.attr.src}}" class="{{root.attr.class}}" style="{{root.attr.style}} "/>
+            </block>
+            <view class="{{root.attr.class}}" style="{{root.attr.style}}" wx:if="{{root.tag != 'img'}}">
+                <block wx:if="{{root.child}}" wx:key="index" wx:for="{{root.child}}" wx:for-item="tag">
+                    <!--<view wx:if="{{tag.node == 'text'}}" class="{{tag.attr.class}}" style="{{tag.attr.style}}">{{tag.text}}</view>-->
+                    {{tag.text}}
+                    <block wx:if="{{tag.node == 'element'}}">
+                        <block wx:if="{{tag.tag == 'img'}}">
+                            <image src="{{tag.attr.src}}" class="{{tag.attr.class}}" style="{{tag.attr.style}} " />
+                        </block>
+                        <view class="{{tag.attr.class}}" style="{{tag.attr.style}}"  wx:if="{{tag.tag != 'img'}}">
+                            <block wx:if="{{tag.child}}" wx:key="index" wx:for="{{tag.child}}" wx:for-item="tag1">
+                                {{tag1.text}}
+                                <block wx:if="{{tag1.node == 'element'}}">
+                                    <block wx:if="{{tag1.tag == 'img'}}">
+                                        <image src="{{tag1.attr.src}}" class="{{tag1.attr.class}}" style="{{tag1.attr.style}} " />
+                                    </block>
+                                    <view class="{{tag1.attr.class}}" style="{{tag1.attr.style}}"  wx:if="{{tag1.tag != 'img'}}">
+                                        <block wx:if="{{tag1.child}}" wx:key="index" wx:for="{{tag1.child}}" wx:for-item="tag2">
+                                            {{tag2.text}}
+                                            <block wx:if="{{tag2.node == 'element'}}">
+                                                <block wx:if="{{tag2.tag == 'img'}}">
+                                                    <image src="{{tag2.attr.src}}" class="{{tag2.attr.class}}" style="{{tag2.attr.style}} " />
+                                                </block>
+                                                <view class="{{tag2.attr.class}}" style="{{tag2.attr.style}}" wx:if="{{tag2.tag != 'img'}}">
+                                                    <block wx:if="{{tag2.child}}" wx:key="index" wx:for="{{tag2.child}}" wx:for-item="tag3">
+                                                        {{tag3.text}}
+                                                        <block wx:if="{{tag3.node == 'element'}}">
+                                                            <block wx:if="{{tag3.tag == 'img'}}">
+                                                                <image src="{{tag3.attr.src}}" class="{{tag3.attr.class}}" style="{{tag3.attr.style}} " />
+                                                            </block>
+                                                            <view class="{{tag3.attr.class}}" style="{{tag3.attr.style}}" wx:if="{{tag3.tag != 'img'}}">
+                                                                <block wx:if="{{tag3.child}}" wx:key="index" wx:for="{{tag3.child}}" wx:for-item="tag4">
+                                                                    {{tag4.text}}
+                                                                    <block wx:if="{{tag4.node == 'element'}}">
+                                                                        <block wx:if="{{tag4.tag == 'img'}}">
+                                                                            <image src="{{tag4.attr.src}}" class="{{tag4.attr.class}}" style="{{tag4.attr.style}} " />
+                                                                        </block>
+                                                                        <view class="{{tag4.attr.class}}" style="{{tag4.attr.style}}" wx:if="{{tag4.tag != 'img'}}">
+                                                                            <block wx:if="{{tag4.child}}" wx:key="index" wx:for="{{tag4.child}}" wx:for-item="tag5">
+                                                                                {{tag5.text}}
+                                                                                <block wx:if="{{tag5.node == 'element'}}">
+                                                                                    <block wx:if="{{tag5.tag == 'img'}}">
+                                                                                        <image src="{{tag5.attr.src}}" class="{{tag5.attr.class}}" style="{{tag5.attr.style}} " />
+                                                                                    </block>
+                                                                                    <view class="{{tag5.attr.class}}" style="{{tag5.attr.style}}" wx:if="{{tag5.tag != 'img'}}">
+                                                                                        <block wx:if="{{tag5.child}}" wx:key="index" wx:for="{{tag5.child}}" wx:for-item="tag6">
+                                                                                            {{tag6.text}}
+                                                                                            <block wx:if="{{tag6.node == 'element'}}">
+                                                                                                <block wx:if="{{tag6.tag == 'img'}}">
+                                                                                                    <image src="{{tag6.attr.src}}" class="{{tag6.attr.class}}" style="{{tag6.attr.style}} " />
+                                                                                                </block>
+                                                                                                <view class="{{tag6.attr.class}}" style="{{tag6.attr.style}}" wx:if="{{tag6.tag != 'img'}}">
+                                                                                                    <block wx:if="{{tag6.child}}" wx:key="index" wx:for="{{tag6.child}}" wx:for-item="tag7">
+                                                                                                        {{tag7.text}}
+                                                                                                        <block wx:if="{{tag7.node == 'element'}}">
+                                                                                                            <block wx:if="{{tag7.tag == 'img'}}">
+                                                                                                                <image src="{{tag7.attr.src}}" class="{{tag7.attr.class}}" style="{{tag7.attr.style}} " />
+                                                                                                            </block>
+                                                                                                            <view class="{{tag7.attr.class}}" style="{{tag7.attr.style}}" wx:if="{{tag7.tag != 'img'}}">
+                                                                                                                <block wx:if="{{tag7.child}}" wx:key="index" wx:for="{{tag7.child}}" wx:for-item="tag8">
+                                                                                                                    {{tag8.text}}
+                                                                                                                    <block wx:if="{{tag8.node == 'element'}}">
+                                                                                                                        <block wx:if="{{tag8.tag == 'img'}}">
+                                                                                                                            <image src="{{tag8.attr.src}}" class="{{tag8.attr.class}}" style="{{tag8.attr.style}} " />
+                                                                                                                        </block>
+                                                                                                                        <view class="{{tag8.attr.class}}" style="{{tag8.attr.style}}" wx:if="{{tag8.tag != 'img'}}">
+                                                                                                                            <block wx:if="{{tag8.child}}" wx:key="index" wx:for="{{tag8.child}}" wx:for-item="tag9">
+                                                                                                                                {{tag9.text}}
+                                                                                                                                <block wx:if="{{tag9.node == 'element'}}">
+                                                                                                                                    <block wx:if="{{tag9.tag == 'img'}}">
+                                                                                                                                        <image src="{{tag9.attr.src}}" class="{{tag9.attr.class}}" style="{{tag9.attr.style}} " />
+                                                                                                                                    </block>
+                                                                                                                                    <view class="{{tag9.attr.class}}" style="{{tag9.attr.style}}" wx:if="{{tag9.tag != 'img'}}">
+                                                                                                                                        <block wx:if="{{tag9.child}}" wx:key="index" wx:for="{{tag9.child}}" wx:for-item="tag10">
+                                                                                                                                            {{tag10.text}}
+                                                                                                                                            <block wx:if="{{tag10.node == 'element'}}">
+                                                                                                                                                <block wx:if="{{tag10.tag == 'img'}}">
+                                                                                                                                                    <image src="{{tag10.attr.src}}" class="{{tag10.attr.class}}" style="{{tag10.attr.style}} " />
+                                                                                                                                                </block>
+                                                                                                                                                <view class="{{tag10.attr.class}}" style="{{tag10.attr.style}}" wx:if="{{tag10.tag != 'img'}}">
+                                                                                                                                                    <block wx:if="{{tag10.child}}" wx:key="index" wx:for="{{tag10.child}}" wx:for-item="tag11">
+                                                                                                                                                        {{tag11.text}}
+                                                                                                                                                        <block wx:if="{{tag11.node == 'element'}}">
+                                                                                                                                                            <block wx:if="{{tag11.tag == 'img'}}">
+                                                                                                                                                                <image src="{{tag11.attr.src}}" class="{{tag11.attr.class}}" style="{{tag11.attr.style}} " />
+                                                                                                                                                            </block>
+                                                                                                                                                            <view class="{{tag11.attr.class}}" style="{{tag11.attr.style}}" wx:if="{{tag11.tag != 'img'}}">
+                                                                                                                                                                ...
+                                                                                                                                                            </view>
+                                                                                                                                                        </block>
+                                                                                                                                                    </block>
+                                                                                                                                                </view>
+                                                                                                                                            </block>
+                                                                                                                                        </block>
+                                                                                                                                    </view>
+                                                                                                                                </block>
+                                                                                                                            </block>
+                                                                                                                        </view>
+                                                                                                                    </block>
+                                                                                                                </block>
+                                                                                                            </view>
+                                                                                                        </block>
+                                                                                                    </block>
+                                                                                                </view>
+                                                                                            </block>
+                                                                                        </block>
+                                                                                    </view>
+                                                                                </block>
+                                                                            </block>
+                                                                        </view>
+                                                                    </block>
+                                                                </block>
+                                                            </view>
+                                                        </block>
+                                                    </block>
+                                                </view>
+                                            </block>
+                                        </block>
+                                    </view>
+                                </block>
+                            </block>
+                        </view>
+                    </block>
+                </block>
+            </view>
+        </block>
+    </block>
+    </view>
+</template>

@@ -1,0 +1,7 @@
+.renderHTML .p{margin:40rpx 30rpx;font-size:34rpx;color: #323232;line-height: 60rpx }
+.renderHTML .h1{font-size:44rpx;color: #000000;line-height: 60rpx;margin-bottom: 40rpx;display: flex;margin-top: 90rpx;padding-right: 30rpx}
+.renderHTML .h1:before{width: 10rpx;height:40rpx;  margin-right:20rpx;display: inline-block;background-color: #000;  content:'';  margin-top:8rpx;}
+.renderHTML .h2{font-size: 34rpx;color: #111111;line-height: 60rpx;padding:40rpx 30rpx 10rpx 30rpx;font-weight: bold}
+/*.article-container .renderHTML .h1 .strong, .article-container .renderHTML .h2 .strong{font-weight: normal}*/
+.renderHTML .p image{ margin:0 auto;  display: block;}
+.renderHTML .strong{display: inline;font-weight: bold}
